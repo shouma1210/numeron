@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ヌメロンシミュレータ</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>ヌメロンシミュレータ</h1>
+    
+    <div>
+        <label>プレイヤ選択：</label>
+        <select id="playerType">
+            <option value="logic">ロジックプレイヤ</option>
+            <option value="random">ランダムプレイヤ</option>
+        </select>
+        <button id="startBtn">プレイ開始</button>
+    </div>
+
+    <div class="stats">
+        状況：<span id="status">待機中</span> |
+        現在の手数：<span id="turnCount">0</span>
+    </div>
+    <h3>途中経過ログ</h3>
+    <div id="log"></div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
